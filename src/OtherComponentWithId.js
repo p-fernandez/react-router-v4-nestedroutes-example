@@ -1,10 +1,10 @@
 import React from 'react';
 
-const OtherComponent = () => ({
+const OtherComponent = ({ match }) => ({
   render() {
     return (
       <div className="OtherComponent">
-        <h1>OtherComponent</h1>
+        <h1>OtherComponentWithId {match.params.id}</h1>
       </div>
     );
   }
